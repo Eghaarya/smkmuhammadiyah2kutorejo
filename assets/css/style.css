@@ -1,0 +1,503 @@
+body{
+    font-family: "Monstserrat","Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+#topbar{
+    background-color: #15477A;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.top-contact .sosmed{
+    list-style: none;
+}
+
+#topbar li{
+    display: inline-block;
+}
+
+#topbar li a{
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#topbar li a i{
+    color: #f2c808;
+    margin-right: 5px;
+}
+
+#topbar .sosmed li a{
+    padding: 0 10px;
+
+}
+#topbar .sosmed li a i{
+
+    color: #fff;
+}
+
+/* css untuk header */
+header{
+    padding: 20px 0;
+}
+.brand{
+    display: flex;
+}
+.brand img{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+}
+.brand .brand-name h1{
+    font-size: 25px;
+    color: #15477A;
+    text-transform: uppercase;
+}
+.brand .brand-name h3{
+    font-size: 18px;
+    font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888888;
+}
+.pembungkus-searchobx{
+    display: flex;
+    align-items: center;
+}
+.searchbox {
+    width: 100%;
+}
+
+.btn.btn-utama{
+    background-color: #15477A;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.btn.btn-utama:hover{
+    background-color: #05223f;
+}
+
+/* css untuk menu / nabar */
+nav{
+    height: 60px;
+}
+.navbar{
+    padding: 0;
+    border-bottom: 5px solid #f2c808;
+}
+.nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+.bg-biru{
+    background-color: #15477A!important;
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link .active,
+.navbar-dark .navbar-nav .nav-link .show,
+.navbar-dark .navbar-nav .show>.nav-link{
+    background-color: #f2c808;
+    color: #fff;
+}
+
+.active{
+    /* background-color: #f2c808; */
+    color: #15477A;
+}
+li.nav-item.active a{
+    color: #15477A;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* css untuk slider */
+#hero-area{
+    position: relative;
+}
+#hero-area .slider-item-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    font-family: Raleway, 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+
+    
+}
+#slider-hero-nav .owl-next,
+#slider-hero-nav .owl-prev{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: none;
+    background-color: #15477A;
+    color: #fff;
+    outline: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+#slider-hero-nav .owl-next:hover,
+#slider-hero-nav .owl-prev:hover{
+    cursor: pointer;
+    background-color: #f2c808;
+}
+#slider-hero-nav .owl-prev{
+    left: 0;
+    border-radius: 0 50px 50px 0;
+}
+#slider-hero-nav .owl-next{
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+#hero-area .slider-item-content h2{
+    font-size: 32px;
+    font-weight: 500;
+}
+#hero-area .slider-item-content p{
+    font-size: 18px;
+
+}
+.video-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* css untuk sambutan */
+#sambutan{
+    margin: 60px 0;
+}
+#sambutan h2{
+    color: #15477A;
+    font-size: 28px;
+    font-weight: 500;
+}
+#sambutan p{
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    font-size: 500;
+    
+}
+
+/* css unutk section prestasi */
+
+.prestasi{
+    min-height: 250px;
+}
+
+.prestasi .col-item-kanan{
+    padding: 20px 30px 20px 20px;
+}
+.section-item{
+    margin: 70px 0;
+    box-shadow: 0 0 25px #ddd;
+    min-height: 250px;
+    overflow: hidden;
+}
+.section-item-thumbnail{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    max-height: 100%;
+
+}
+
+.section-title{
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.section-title h2{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #15477A;
+    font-weight: 600;
+}
+
+.section-title h2:after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 3px;
+    background-color: #f2c808;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-item-title{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+.section-item-title h3{
+    font-size: 18px;
+    color: #15477A;
+    line-height: 25px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+
+.section-item-title span{
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+}
+.section-item-title span i{
+    margin-right: 5px;
+}
+.section-item-title span:first-of-type{
+    margin-right: 15px;
+}
+.section-title-body p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+}
+
+/* css untuk tombol prestasi selengkapnya */
+
+section{
+    margin: 80px 0;
+}
+.tombol-selengkapnya{
+    text-align: center;
+}
+.btn.btn-more{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #15477A;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #15477A;
+    border-radius: 0;
+    padding: 10px 40px;
+}
+
+
+/* css untuk slider tenaga pendidik */
+.owl-item{
+    padding: 20px 0;
+
+}
+.section-item-slider{
+    height: 380px;
+    box-shadow: 0 0 25px #ddd;
+    position: relative;
+    
+}
+#tenaga-pendidik .foto-guru{
+    height: 100%;
+    object-fit: cover;
+}
+.section-item-caption{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 10px 15px;
+}
+.section-item-caption h5{
+    color: #15477A;
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-item-caption h6{
+    font-size: 18px;
+    color: #f2c808;
+    text-transform: uppercase;
+}
+#tenaga-pendidik .section-body{
+    position: relative;
+}
+#slider-tools-1 .owl-next,
+#slider-tools-1 .owl-prev{
+    position: absolute;
+    content: "";
+    top: 40%;
+    transform: translateY(-50%);
+    right: -60px;
+    z-index: 20;
+    background-color: #15477A;
+    border: none;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 20px #ddd;
+    transition: background-color 0.3s;
+}
+#slider-tools-1 .owl-prev{
+    left: -60px;
+}
+
+#slider-tools-1 .owl-next:hover,
+#slider-tools-1 .owl-prev:hover{
+    cursor: pointer;
+    background-color: #f2c808;
+    color: #000;
+}
+
+
+/* css untuk osis */
+#osis{
+    background-color: #15477A;
+    padding: 80px 0;
+}
+#osis .section-title h2{
+    color: #fff;
+}
+
+#osis .section-item-slider{
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.473);
+    border-radius: 10px;
+}
+#osis .section-item-slider{
+    height: 240px;
+    padding: 10px;
+}
+
+
+#osis .section-item-content h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #f2c808;
+}
+#osis .section-item-content p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 26px;
+}
+#osis .section-item-content .more{
+    color: #f2c808;
+}
+
+.foto-osis{
+    height: 100%;
+    object-fit: cover;
+}
+.section-body{
+    position: relative;
+}
+#slider-tools-2 .owl-next,
+#slider-tools-2 .owl-prev{
+    position: absolute;
+    background-color: #fff;
+    top: 45%;
+    right: -50px;
+    z-index: 20;
+    border: none;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transition: background-color 0.3s;
+}
+#slider-tools-2 .owl-prev{
+    left: -50px;
+}
+#slider-tools-2 .owl-prev:hover,
+#slider-tools-2 .owl-next:hover{
+    background-color: #f2c808;
+    cursor: pointer;
+}
+
+
+/* css untuk foto galeri dokumentasi */
+#galeri-foto .foto-dokumentasi{
+    height: 100%;
+    object-fit: cover;
+}
+#slider-tools-3 .owl-next,
+#slider-tools-3 .owl-prev{
+    position: absolute;
+    background-color: #15477A;
+    color: #ddd;
+    top: 45%;
+    right: -50px;
+    z-index: 20;
+    border: none;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transition: background-color 0.3s;
+}
+#slider-tools-3 .owl-prev{
+    left: -50px;
+}
+#slider-tools-3 .owl-prev:hover,
+#slider-tools-3 .owl-next:hover{
+    background-color: #f2c808;
+    cursor: pointer;
+}
+
+
+
+/* css untuk video galeri dokumentasi */
+
+#slider-tools-4 .owl-next,
+#slider-tools-4 .owl-prev{
+    position: absolute;
+    background-color: #15477A;
+    color: #ddd;
+    top: 45%;
+    right: -50px;
+    z-index: 20;
+    border: none;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    transition: background-color 0.3s;
+}
+#slider-tools-4 .owl-prev{
+    left: -50px;
+}
+#slider-tools-4 .owl-prev:hover,
+#slider-tools-4 .owl-next:hover{
+    background-color: #f2c808;
+    cursor: pointer;
+}
+.video-galeri{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
