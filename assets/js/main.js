@@ -1,5 +1,44 @@
-$(document).ready(function(){
+// slider responsible
+var tenaga_pendidik_slider = 1
+var osis_slider = 1
+var galeri_foto_slider = 1
+var galeri_video_slider = 1
 
+
+if(window.innerWidth >= 1350){
+    tenaga_pendidik_slider = 3
+    osis_slider = 3
+    galeri_foto_slider = 3
+    galeri_video_slider = 3
+}
+else if(window.innerWidth >= 700){
+    tenaga_pendidik_slider = 2
+    osis_slider = 2
+    galeri_foto_slider = 2
+    galeri_video_slider = 2
+}
+
+if(window.innerWidth <= 900){
+    function removeNode(){
+        const myDiv = document.getElementById("a-hapus")
+        const parent = myDiv.parentNode;
+        parent.removeChild(myDiv)
+    }
+    removeNode()
+    removeNode()     
+}
+
+// popup
+function telp(){
+    alert("Silahkan Contact : 0852-3202-3939")
+}
+function alamat(){
+    alert("Alamat : Jl. Mayjen H.Soemadi No. 88 Kutorejo")
+}
+
+    
+// slider
+$(document).ready(function(){
 
     $("#slider-hero").owlCarousel({
         loop: true,
@@ -16,7 +55,7 @@ $(document).ready(function(){
     $("#tenaga-pendidik-slider").owlCarousel({
         loop: true,
         nav:true,
-        items:3,
+        items:tenaga_pendidik_slider,
         dots:false,
         margin:20,
         navText:[
@@ -28,7 +67,7 @@ $(document).ready(function(){
     $("#osis-slider").owlCarousel({
         loop: true,
         nav:true,
-        items:3,
+        items:osis_slider,
         dots:false,
         margin:20,
         navText:[
@@ -40,7 +79,7 @@ $(document).ready(function(){
     $("#galeri-foto-slider").owlCarousel({
         loop: true,
         nav:true,
-        items:3,
+        items:galeri_foto_slider,
         dots:false,
         margin:20,
         navText:[
@@ -52,7 +91,7 @@ $(document).ready(function(){
     $("#galeri-video-slider").owlCarousel({
         loop: true,
         nav:true,
-        items:3,
+        items:galeri_video_slider,
         dots:false,
         margin:20,
         navText:[

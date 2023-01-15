@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="assets/js/jquery-3.3.1.slim.min.js">
     <link rel="stylesheet" href="assets/css/style.css">
   <body>
       
@@ -14,18 +16,28 @@
   	<section id="topbar">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-3 col-2" >
             <ul class="top-contact">
-              <li><a href=""><i class="fas fa-phone"></i>0852-3202-3939</a></li>
-              <li><a href=""><i class="fas fa-bullhorn"></i>Jl. Mayjen H.Soemadi No. 88 Kutorejo</a></li>
+              <li>
+                <i onclick="telp()" class="fas fa-phone"><a id="a-hapus" href="">0852-3202-3939</a></i>
+              </li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-5 col-2" >
+            <ul class="top-contact">
+              <li>
+                <i onclick="alamat()" class="fas fa-bullhorn"><a id="a-hapus" href="">Jl. Mayjen H.Soemadi No. 88 Kutorejo</a></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-8">
             <ul class="sosmed">
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a href=""><i class="fab fa-youtube"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -112,31 +124,24 @@
         </div>
       </div>
      </nav> 
+     
       
      <!-- section area slider -->
      <section id="hero-area">
         <div id="slider-hero-nav"></div>
         <div class="owl-carousel" id="slider-hero">
+          <!-- list slider utama -->
           <div class="slider-item">
             <div class="slider-item-jpg">
               <img src="assets/img/banner-siswa1.jpg" alt="">
-            </div>
-            <div class="slider-item-content">
-              <h2>Selamat datang di website SMK Muhammadiyah 2 Kutorejo</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis eos at id possimus sunt. Blanditiis quaerat architecto voluptatum dolore, optio veniam ex nesciunt consequatur saepe aliquid, facilis molestiae atque.</p>
-              <button class="btn btn-utama">Cek Selengkapnya</button>
             </div>
           </div>
           <div class="slider-item">
             <div class="slider-item-jpg">
               <img src="assets/img/banner-siswa1.jpg" alt="">
             </div>
-            <div class="slider-item-content">
-              <h2>Selamat datang di website SMK Muhammadiyah 2 Kutorejo</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis eos at id possimus sunt. Blanditiis quaerat architecto voluptatum dolore, optio veniam ex nesciunt consequatur saepe aliquid, facilis molestiae atque.</p>
-              <button class="btn btn-utama">Cek Selengkapnya</button>
-            </div>
           </div>
+          <!-- ========== -->
         </div>
      </section>
 
@@ -148,11 +153,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="video-wrapper">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/smizXa_eqPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/smizXa_eqPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </div>
           </div>
           <div class="col-md-6">
-            <H1>Sambutan Keplaa Sekolah</H1>
+            <H1>Sambutan Kepala Sekolah</H1>
             <p>Ini adalah contoh sambutan / kata Pengantar dari Kepala Sekolah. Sebagai lembaga pendidikan, SMA Negeri 1 Harapan tanggap dengan perkembangan teknologi tersebut. Dengan dukungan SDM yang di miliki sekolah ini siap untuk berkompetisi dengan sekolah lain dalam pelayanan informasi publik. Teknologi Informasi Web khususnya, menjadi sarana bagi SMA Negeri 1 Harapan untuk memberi pelayanan informasi secara cepat, jelas, dan akuntable. Dari layanan ini pula, sekolah siap menerima saran dari semua pihak yang akhirnya dapat menjawab Kebutuhan masyarakat.</p>
             <a href="" class="btn btn-utama">Baca Selengkapnya</a>
           </div>
@@ -213,6 +218,146 @@
         </div>
      </section>
 
+
+     <!-- section ektrakurikuler -->
+     <section id="ekstra">
+      <div class="container">
+        <div class="section-title">
+          <h2>Ekstrakurikuler</h2>
+        </div>
+        <!-- list ekstrakurikuler -->
+        <div class="section-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-body-item">
+                <div class="row row-2">
+                  <div class="col-md-3">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="col-md-9">
+                    <h4>Praja Muda Karana (Pramuka)</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= -->
+        <div class="tombol-selengkapnya">
+          <a href="" class="btn btn-more">Lihat Ekstrakurikuler Lainnya </a>
+        </div>
+      </div>
+     </section>
+
+
+
+
      <!-- section tenaga pendidik -->
      <section id="tenaga-pendidik">
       <div class="container">
@@ -247,6 +392,9 @@
            </div>
           <!-- =============== -->
         </div>
+        <div class="tombol-selengkapnya">
+          <a href="" class="btn btn-more">Lihat Daftar Lainnya</a>
+        </div>
       </div>
      </section>
 
@@ -255,7 +403,7 @@
      <section id="osis">
       <div class="container">
         <div class="section-title">
-          <h2>Ekstakurikuler</h2>
+          <h2>Anggota OSIS</h2>
         </div>
         <div class="section-body">
           <div id="slider-tools-2"></div>
@@ -285,7 +433,7 @@
                 <div class="col-md-7">
                   <div class="section-item-content">
                     <a href="">
-                      <h3>Nama Ekstakurikuler</h3>
+                      <h3>Anggota OSIS</h3>
                     </a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias, deleniti quasi qui quia.</p>
                     <a href="" class="more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
@@ -301,7 +449,7 @@
                 <div class="col-md-7">
                   <div class="section-item-content">
                     <a href="">
-                      <h3>Nama Ekstakurikuler</h3>
+                      <h3>Anggota OSIS</h3>
                     </a>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias, deleniti quasi qui quia.</p>
                     <a href="" class="more">Selengkapnya <i class="fas fa-arrow-right"></i></a>
@@ -311,6 +459,9 @@
             </div>
             <!-- =============== -->
           </div>
+        </div>
+        <div class="tombol-selengkapnya">
+          <a href="" class="btn btn-more">Lihat Anggota Lainnya</a>
         </div>
       </div>
      </section>
@@ -350,6 +501,7 @@
            </div>
           <!-- =============== -->
         </div>
+        
       </div>
      </section>
 
@@ -390,8 +542,183 @@
            </div>
           <!-- =============== -->
         </div>
+        <div class="tombol-selengkapnya">
+          <a href="" class="btn btn-more">Lihat Dokumentasi Lainnya</a>
+        </div>
       </div>
      </section>
+
+    <!-- section berita -->
+    <section id="berita">
+      <div class="container">
+        <div class="section-title">
+          <h2>Berita Terupdate</h2>
+        </div>
+        <div class="section-body">
+          <!-- list berita -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="section-thumbnail">
+                <img src="assets/img/galeri-1.jpg" alt="">
+                <div class="tanggal">
+                  <span class="tgl">14</span>
+                  <span class="tgl-2">okt, 2019</span>
+                </div>
+              </div>
+              <div class="section-content">
+                <a href=""><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, praesentium!</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe! Minima, quas harum? Consequatur veniam dolorem officiis dolore, similique beatae qui! Sed rem cupiditate enim ab voluptas aspernatur ducimus commodi! <a href="" class="more">[...]</a></p>
+              </div>
+              <div class="section-meta">
+                <a href="" >Kegiatan</a>
+                <a href="" ><i class="fas fa-user"></i>Admin</a>
+              </div>
+            </div>
+          </div>
+          <!-- ============ -->
+        </div>
+        <div class="tombol-selengkapnya">
+          <a href="" class="btn btn-more">Lihat Berita Lainnya</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- foooter -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer-col">
+              <div class="brand">
+                <img src="assets/img/logo.jpg" alt="">
+                <h1>SMK Muhammadiyah 2 Kutorejo</h1>
+              </div>
+              <P class="tentang">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, sit quos rerum quo recusandae, fuga labore et earum ea, veniam quidem? Vitae adipisci et id ut aspernatur repellat quisquam nihil?</P>
+              <ul class="medsos">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-col">
+              <h2>Kontak</h2>
+              <p class="alamat">Jl. Mayjen H.Soemadi No. 88 Kutorejo</p>
+              <ul class="kontak">
+                <li><i class="fas fa-phone"></i>0852-3202-3939</li>
+                <li><i class="fas fa-envelope"></i>smkmuh2_kutorejo@yahoo.ac.id</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-col">
+              <h2>Navigasi</h2>
+              <ul class="footer-nav">
+                <li><a href="">Sejarah</a></li>
+                <li><a href="">Struktur Organisasi</a></li>
+                <li><a href="">Fasilitas</a></li>
+                <li><a href="">Beasiswa</a></li>
+                <li><a href="">Pendaftaran PPDB</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container text-center" >
+          <h6>Smk Muhammadiyah 2 Kutorejo. 2023 CopyrightS</h6>
+        </div>
+      </div>
+    </footer>
 
       <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>

@@ -10,7 +10,7 @@ a, a:hover{
 #topbar{
     background-color: #15477A;
 
-    margin-top: 0;
+     /* margin-top: 0; */
     margin-bottom: 0;
     
     color: #fff;
@@ -25,16 +25,21 @@ a, a:hover{
 #topbar li{
     display: inline-block;
 }
-
-#topbar li a{
+#topbar .top-contact i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#topbar li i a{
     color: #fff;
     display: inline-block;
     padding: 0 20px;
 }
 
-#topbar li a i{
+#topbar li i{
     color: #f2c808;
     margin-right: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 #topbar .sosmed li a{
@@ -56,6 +61,7 @@ header{
 .brand img{
     width: auto;
     height: auto;
+    object-fit: contain;
     margin-right: 20px;
 }
 .brand .brand-name h1{
@@ -131,23 +137,21 @@ li.nav-item.active a{
     display: inline-block;
 }
 
-/* css untuk slider */
+
+
+/* css untuk slider utama */
 #hero-area{
     position: relative;
 }
-#hero-area .slider-item-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    text-align: center;
-    width: 50%;
-    font-family: Raleway, 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
 
-    
+#hero-area .slider-item-jpg img{
+    margin-top: 0;
+    height: 100%;
+    object-fit: contain;
 }
+
+
+
 #slider-hero-nav .owl-next,
 #slider-hero-nav .owl-prev{
     position: absolute;
@@ -174,14 +178,9 @@ li.nav-item.active a{
     right: 0;
     border-radius: 50px 0 0 50px;
 }
-#hero-area .slider-item-content h2{
-    font-size: 32px;
-    font-weight: 500;
-}
-#hero-area .slider-item-content p{
-    font-size: 18px;
 
-}
+
+/* css untuk sambutan */
 .video-wrapper iframe{
     position: absolute;
     top: 0;
@@ -189,8 +188,6 @@ li.nav-item.active a{
     width: 100%;
     height: 100%;
 }
-
-/* css untuk sambutan */
 #sambutan{
     margin: 60px 0;
 }
@@ -208,15 +205,13 @@ li.nav-item.active a{
 
 /* css unutk section prestasi */
 
-.prestasi{
+#prestasi{
     min-height: 250px;
 }
 
-.prestasi .col-item-kanan{
-    padding: 20px 30px 20px 20px;
-}
 .section-item{
     margin: 70px 0;
+    padding: 10px;
     box-shadow: 0 0 25px #ddd;
     min-height: 250px;
     overflow: hidden;
@@ -261,6 +256,7 @@ li.nav-item.active a{
     padding: 20px 0;
 }
 .section-item-title h3{
+    margin-top: 0;
     font-size: 18px;
     color: #15477A;
     line-height: 25px;
@@ -305,6 +301,35 @@ section{
     padding: 10px 40px;
 }
 
+/* css untuk slider ektrakurikuler */
+
+#ekstra{
+    background-color: #ddd;
+    padding: 80px 0;
+
+}
+#ekstra .section-body-item{
+    background-color: #15477A;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 20px;
+    color: #f2c808;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    font-size: 23px;
+}
+#ekstra .section-body-item h4{
+    font-weight: 400;
+}
+#ekstra .section-body .row:first-of-type{
+    margin-bottom: 30px;
+}
+#ekstra .row-2{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* css untuk slider tenaga pendidik */
 .owl-item{
@@ -312,10 +337,13 @@ section{
 
 }
 .section-item-slider{
-    height: 380px;
+    height: 600px;
     box-shadow: 0 0 25px #ddd;
     position: relative;
     
+}
+#tenaga-pendidik .container{
+    padding: 20px;
 }
 #tenaga-pendidik .foto-guru{
     height: 100%;
@@ -380,9 +408,14 @@ section{
 #osis{
     background-color: #15477A;
     padding: 80px 0;
+    
 }
 #osis .section-title h2{
     color: #fff;
+}
+
+#osis .container{
+    padding: 20px;
 }
 
 #osis .section-item-slider{
@@ -391,12 +424,15 @@ section{
     border-radius: 10px;
 }
 #osis .section-item-slider{
-    height: 240px;
-    padding: 10px;
+    height: 100%;
+    padding-left: 10px;
+}
+#osis .section-item-content {
+    padding-bottom: 10px;
 }
 
-
 #osis .section-item-content h3{
+    padding-top: 10px;
     font-size: 18px;
     font-weight: 500;
     color: #f2c808;
@@ -412,7 +448,8 @@ section{
 
 .foto-osis{
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 }
 .section-body{
     position: relative;
@@ -441,6 +478,10 @@ section{
 
 
 /* css untuk foto galeri dokumentasi */
+#galeri-foto .container{
+    padding: 20px;
+}
+
 #galeri-foto .foto-dokumentasi{
     height: 100%;
     object-fit: cover;
@@ -501,3 +542,176 @@ section{
 }
 
 
+
+/* css untuk berita */
+#berita .row:first-of-type{
+    margin-bottom: 30px;
+}
+.section-thumbnail{
+    width: 100%;
+    height: 237px;
+    overflow: hidden;
+    position: relative;
+}
+.section-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#berita .section-thumbnail .tanggal{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    left: 10px;
+    background-color: #15477A;
+    color: #f2c808;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#berita .section-thumbnail span{
+    margin: 0;
+    padding: 0;
+}
+#berita .section-thumbnail .tanggal span.tgl{
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+#berita .section-thumbnail .tanggal span.tgl-2{
+    font-size: 10px;
+}
+
+#berita .section-content{
+    padding: 20px 0;
+}
+#berita .section-content h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #15477A;
+    line-height: 24px;
+}
+#berita .section-content p{
+    font-size: 14px;
+    color: #777;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+#berita .section-content p .more{
+    color: #15477A;
+    font-weight: 500;
+}
+.section-meta{
+    margin-bottom: 30px;
+}
+.section-meta a{
+    background-color: #15477A;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.section-meta a i{
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+
+/* css untuk footer */
+footer{
+    color: #fff;
+    background-color: #15477A;
+    padding: 80px 0;
+}
+footer .brand{
+    display: flex;
+}
+footer .brand img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+footer .brand h1{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+footer .tentang {
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+}
+.medsos{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.medsos li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.medsos li a{
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+}
+.medsos li a:hover{
+    color: #999;
+}
+.footer-col{
+    padding-top: 20px;
+}
+.footer-col h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.footer-col .alamat{
+    font-size: 14px;
+    line-height: 25px;
+    
+}
+.footer-col .kontak{
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+.footer-col .kontak i {
+    margin-right: 10px;
+
+}
+.footer-col .footer-nav{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.footer-col .footer-nav a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 28px;
+    transition: all 0.3s;
+}
+.footer-col .footer-nav a:hover{
+    border-bottom: 1px dashed #fff;
+}
+
+.footer-copyright .container{
+    border-top: 1px solid #777;
+    padding: 10px 0;
+}
+.footer-copyright{
+    margin-top: 60px;
+    font-size: 16px;
+    color: #fff;
+}
