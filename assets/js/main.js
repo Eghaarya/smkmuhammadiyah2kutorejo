@@ -28,6 +28,7 @@ if(window.innerWidth <= 900){
     removeNode()     
 }
 
+
 // popup
 function telp(){
     alert("Silahkan Contact : 0852-3202-3939")
@@ -47,8 +48,8 @@ $(document).ready(function(){
         dots:false,
         margin:0,
         navText:[
-            "<i class='fas fa-angle-left' aria-hidden='true'><i>",
-            "<i class='fas fa-angle-right' aria-hidden='true'><i>",
+            "<i class='fas fa-angle-left'  aria-hidden='true'><i>",
+            "<i class='fas fa-angle-right'  aria-hidden='true'><i>",
         ],
         navContainer: "#slider-hero-nav",
     });
@@ -59,8 +60,8 @@ $(document).ready(function(){
         dots:false,
         margin:20,
         navText:[
-            "<i class='fas fa-angle-left' aria-hidden='true'><i>",
-            "<i class='fas fa-angle-right' aria-hidden='true'><i>",
+            "<i class='fas fa-angle-left'  aria-hidden='true'><i>",
+            "<i class='fas fa-angle-right'  aria-hidden='true'><i>",
         ],
         navContainer: "#slider-tools-1",
     });
@@ -101,3 +102,19 @@ $(document).ready(function(){
         navContainer: "#slider-tools-4",
     });
 });
+
+if(window.innerWidth <= 900){
+    function tombol(){
+        const btn = document.getElementById("slider-hero-nav")
+        const btn1 = document.getElementById("slider-tools-1")
+        const btn2 = document.getElementById("slider-tools-2")
+        const btn3 = document.getElementById("slider-tools-3")
+        const btn4 = document.getElementById("slider-tools-4")
+        btn.remove()
+        btn1.remove()
+        btn2.remove()
+        btn3.remove()
+        btn4.remove()
+    }
+    tombol()    
+}

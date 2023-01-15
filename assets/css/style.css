@@ -1,5 +1,6 @@
 body{
     font-family: "Monstserrat","Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
 
 }
 
@@ -10,12 +11,13 @@ a, a:hover{
 #topbar{
     background-color: #15477A;
 
-     /* margin-top: 0; */
+    margin-top: 30px;
     margin-bottom: 0;
     
     color: #fff;
     height: 50px;
     line-height: 50px;
+    border-bottom: 4px solid #f2c808;
 }
 
 .top-contact .sosmed{
@@ -27,7 +29,7 @@ a, a:hover{
 }
 #topbar .top-contact i:hover{
     cursor: pointer;
-    color: #fff;
+    color: #f2c808;
 }
 #topbar li i a{
     color: #fff;
@@ -36,7 +38,7 @@ a, a:hover{
 }
 
 #topbar li i{
-    color: #f2c808;
+    color: #fff;
     margin-right: 5px;
     display: inline-block;
     transition: background-color 0.3s;
@@ -95,6 +97,8 @@ header{
     background-color: #05223f;
 }
 
+
+
 /* css untuk menu / nabar */
 nav{
     height: 60px;
@@ -102,12 +106,29 @@ nav{
 .navbar{
     padding: 0;
     border-bottom: 5px solid #f2c808;
+    font-weight: 500;
+    z-index: 10;
 }
 .nav-link{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.25px;
+    background-color: #15477A;
+    border: 0.7px solid #fff;
+    border-radius: 10%;
+    
+}
+.dropdown-menu{
+    background-color: rgb(49, 49, 49);
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #fff;
+    color: #000;
+}
+.dropdown-menu .dropdown-item{
+    font-weight: 500;
+    color: #fff;
 }
 .bg-biru{
     background-color: #15477A!important;
@@ -146,8 +167,11 @@ li.nav-item.active a{
 
 #hero-area .slider-item-jpg img{
     margin-top: 0;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
+    object-fit: cover;
+}
+#hero-area .slider-item-jpg img:hover{
+    cursor: pointer;
 }
 
 
@@ -182,12 +206,17 @@ li.nav-item.active a{
 
 /* css untuk sambutan */
 .video-wrapper iframe{
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    min-height: 250px;
+
 }
+/* #sambutan .row{
+    display: block;
+} */
 #sambutan{
     margin: 60px 0;
 }
@@ -195,6 +224,7 @@ li.nav-item.active a{
     color: #15477A;
     font-size: 28px;
     font-weight: 500;
+    padding-bottom: 20px;
 }
 #sambutan p{
     font-size: 14px;
@@ -337,7 +367,7 @@ section{
 
 }
 .section-item-slider{
-    height: 600px;
+    height: 400px;
     box-shadow: 0 0 25px #ddd;
     position: relative;
     
@@ -425,10 +455,11 @@ section{
 }
 #osis .section-item-slider{
     height: 100%;
-    padding-left: 10px;
 }
 #osis .section-item-content {
-    padding-bottom: 10px;
+    padding: 10px 20px;
+    
+
 }
 
 #osis .section-item-content h3{
@@ -448,6 +479,7 @@ section{
 
 .foto-osis{
     height: 100%;
+    padding: 10px;
     width: 100%;
     object-fit: contain;
 }
@@ -623,6 +655,10 @@ footer{
     background-color: #15477A;
     padding: 80px 0;
 }
+footer .container .row{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
 footer .brand{
     display: flex;
 }
@@ -670,10 +706,14 @@ footer .tentang {
 .footer-col{
     padding-top: 20px;
 }
+
+
 .footer-col h2{
+    border-top: 1px dashed #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    padding-top: 10px;
     margin-top: 10px;
 }
 .footer-col .alamat{
@@ -706,12 +746,14 @@ footer .tentang {
     border-bottom: 1px dashed #fff;
 }
 
-.footer-copyright .container{
-    border-top: 1px solid #777;
-    padding: 10px 0;
-}
 .footer-copyright{
-    margin-top: 60px;
+    border-top: 1px solid #777;
+
+}
+.footer-copyright h6{
+    margin-top: 10px;
+    padding: 0;
     font-size: 16px;
+    text-align: center;
     color: #fff;
 }
