@@ -7,7 +7,7 @@ var galeri_video_slider = 1
 
 if(window.innerWidth >= 1350){
     tenaga_pendidik_slider = 3
-    osis_slider = 3
+    osis_slider = 2
     galeri_foto_slider = 3
     galeri_video_slider = 3
 }
@@ -102,7 +102,6 @@ $(document).ready(function(){
         navContainer: "#slider-tools-4",
     });
 });
-
 if(window.innerWidth <= 900){
     function tombol(){
         const btn = document.getElementById("slider-hero-nav")

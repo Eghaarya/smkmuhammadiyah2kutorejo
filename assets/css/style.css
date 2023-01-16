@@ -1,7 +1,7 @@
 body{
     font-family: "Monstserrat","Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
-
+    
 }
 
 a, a:hover{
@@ -106,6 +106,7 @@ nav{
 nav span{
     color: #fff;
 }
+
 .navbar{
     padding: 0;
     border-bottom: 5px solid #f2c808;
@@ -166,15 +167,21 @@ li.nav-item.active a{
 /* css untuk slider utama */
 #hero-area{
     position: relative;
+    margin-top: -5px;
+    margin-bottom: -20px;
+
 }
 
 #hero-area .slider-item-jpg img{
     margin-top: 0;
     height: 400px;
     object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s;
 }
 #hero-area .slider-item-jpg img:hover{
     cursor: pointer;
+    opacity: 1;
 }
 
 #slider-hero-nav .owl-next,
@@ -229,6 +236,11 @@ li.nav-item.active a{
     text-align: center;
     margin-bottom: 30px;
     padding-top: 10px;
+    background-color: #15477A;
+    border-bottom: 4px solid #f2c808;
+}
+#sambutan h1{
+    font-size: 24px;
 }
 #sambutan h2.border-judul-profil{
     background-color: #15477A;
@@ -245,6 +257,10 @@ li.nav-item.active a{
     font-size: 500;
     
 }
+#sambutan a{
+    margin-bottom: 10px;
+}
+
 
 
 /* css unutk section prestasi */
@@ -345,7 +361,7 @@ section{
     padding: 10px 40px;
 }
 
-/* css untuk slider ektrakurikuler */
+/* css untuk  ektrakurikuler */
 
 #ekstra{
     background-color: #ddd;
@@ -398,13 +414,30 @@ section{
     position: relative;
     
 }
+#tenaga-pendidik{
+    overflow: hidden;
+}
 #tenaga-pendidik .container{
     padding: 20px;
 }
 #tenaga-pendidik .foto-guru{
     height: 100%;
     object-fit: cover;
+    transition: height 1s;
+    transition: border 0.7s;
+    transition: background-color 0.7s;
+
 }
+#tenaga-pendidik .foto-guru:hover{
+    border: 1px solid #15477A;
+    padding: 40px;
+    cursor: pointer;
+    height: 70%;
+    object-fit: contain;
+    background-color: #fbfbfb;
+    
+}
+
 .section-item-caption{
     position: absolute;
     bottom: 0;
@@ -464,6 +497,7 @@ section{
 #osis{
     background-color: #15477A;
     padding: 80px 0;
+    overflow: hidden;
     
 }
 #osis .section-title h2{
@@ -486,8 +520,6 @@ section{
     padding: 10px 10px;
     padding-left: 15px;
     
-    
-
 }
 
 #osis .section-item-content h3{
@@ -538,6 +570,9 @@ section{
 
 
 /* css untuk foto galeri dokumentasi */
+#galeri-foto{
+    overflow: hidden;
+}
 #galeri-foto .container{
     padding: 20px;
 }
@@ -572,6 +607,9 @@ section{
 
 
 /* css untuk video galeri dokumentasi */
+#galeri-video{
+    overflow: hidden;
+}
 
 #slider-tools-4 .owl-next,
 #slider-tools-4 .owl-prev{
@@ -604,6 +642,9 @@ section{
 
 
 /* css untuk berita */
+#berita{
+    overflow: hidden;
+}
 #berita .row:first-of-type{
     margin-bottom: 30px;
 }
