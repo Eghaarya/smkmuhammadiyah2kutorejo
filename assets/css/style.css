@@ -103,6 +103,9 @@ header{
 nav{
     height: 60px;
 }
+nav span{
+    color: #fff;
+}
 .navbar{
     padding: 0;
     border-bottom: 5px solid #f2c808;
@@ -147,10 +150,10 @@ nav{
 
 .active{
     /* background-color: #f2c808; */
-    color: #15477A;
+    color: #fff;
 }
 li.nav-item.active a{
-    color: #15477A;
+    color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -167,14 +170,12 @@ li.nav-item.active a{
 
 #hero-area .slider-item-jpg img{
     margin-top: 0;
-    height: auto;
+    height: 400px;
     object-fit: cover;
 }
 #hero-area .slider-item-jpg img:hover{
     cursor: pointer;
 }
-
-
 
 #slider-hero-nav .owl-next,
 #slider-hero-nav .owl-prev{
@@ -221,10 +222,22 @@ li.nav-item.active a{
     margin: 60px 0;
 }
 #sambutan h2{
-    color: #15477A;
+    color: #fff;
     font-size: 28px;
     font-weight: 500;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+#sambutan h2.border-judul-profil{
+    background-color: #15477A;
+    border: 3px solid #f2c808;
+}
+#sambutan h2.border-judul-informasi{
+    background-color: #f2c808;
+    border: 3px solid #15477A;
+    color: #15477A;
 }
 #sambutan p{
     font-size: 14px;
@@ -232,6 +245,7 @@ li.nav-item.active a{
     font-size: 500;
     
 }
+
 
 /* css unutk section prestasi */
 
@@ -351,6 +365,18 @@ section{
 }
 #ekstra .section-body-item h4{
     font-weight: 400;
+    margin: 0;
+}
+#ekstra .col-md-3{
+    padding: 0;
+    padding: 10px;
+}
+#ekstra .col-md-9{
+    padding: 0;
+}
+#ekstra .section-body-item i{
+    font-size: 30px;
+    text-align: center;
 }
 #ekstra .section-body .row:first-of-type{
     margin-bottom: 30px;
@@ -457,7 +483,9 @@ section{
     height: 100%;
 }
 #osis .section-item-content {
-    padding: 10px 20px;
+    padding: 10px 10px;
+    padding-left: 15px;
+    
     
 
 }
